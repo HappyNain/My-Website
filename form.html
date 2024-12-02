@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gun Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(images/form.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        table {
+            width: 100%;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8); 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        }
+        
+        th, td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 5px;
+        }
+        
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        
+        td {
+            color: #333; 
+        }
+        .nav-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #3498db; 
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 0 10px; 
+            cursor: pointer;
+        }
+        .nav-button:hover {
+            background-color: #2980b9; 
+        }
+    </style>
+</head>
+<body><div class="nav-buttons">
+    <a href="../introduction.html" class="nav-button">Home</a>
+    <a href="main_index.html" class="nav-button">Table of Contents</a>
+</div>
+    <h2>Gun Booking Form</h2>
+    <form>
+        <table>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" required placeholder="Enter your full name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" required placeholder="Enter your email"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="tel" required placeholder="Enter your phone number"></td>
+            </tr>
+            <tr>
+                <td>Gun Model:</td>
+                <td>
+                    <select required>
+                        <option value="">Select gun Model</option>
+                        <option>AK47</option>
+                        <option>MP5</option>
+                        <option>M4</option>
+                        <option>Desert Eagle</option>
+                        <option>M16</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Date:</td>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Rental Duration:</td>
+                <td><input type="number" min="1" max="30" required placeholder="Number of days"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Book Your Gun">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
